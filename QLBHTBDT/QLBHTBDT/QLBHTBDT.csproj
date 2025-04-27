@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E496C6C9-5A8C-47B5-8974-8A5F754F72F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLBHTBDT</RootNamespace>
+    <AssemblyName>QLBHTBDT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Connection.cs" />
+    <Compile Include="Views\DonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DonHang.Designer.cs">
+      <DependentUpon>DonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TrangThaiDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TrangThaiDon.Designer.cs">
+      <DependentUpon>TrangThaiDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\XemHoaDonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\XemHoaDonForm.Designer.cs">
+      <DependentUpon>XemHoaDonForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DonHang.resx">
+      <DependentUpon>DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TrangThaiDon.resx">
+      <DependentUpon>TrangThaiDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\XemHoaDonForm.resx">
+      <DependentUpon>XemHoaDonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img&amp;Icon\1458264592_laptop_computer_pc_device_notebook_netbook_internet_icon-icons.com_55334.ico" />
+    <Content Include="Img&amp;Icon\1458264592_laptop_computer_pc_device_notebook_netbook_internet_icon-icons.com_55334.png" />
+    <Content Include="Img&amp;Icon\398284389_332414969390317_6754440856158691461_n.jpg" />
+    <Content Include="Img&amp;Icon\4023875-data-information-open-data-tech_112856.png" />
+    <Content Include="Img&amp;Icon\976607-appliances-computer-laptop-notebook-portable-computer_106543.png" />
+    <Content Include="Img&amp;Icon\apple_festival_imac_white_29976.png" />
+    <Content Include="Img&amp;Icon\electronics_icon-icons.com_69106.ico" />
+    <Content Include="Img&amp;Icon\icons8-add-32 %281%29.png" />
+    <Content Include="Img&amp;Icon\icons8-cancel-32.png" />
+    <Content Include="Img&amp;Icon\icons8-delete-32.png" />
+    <Content Include="Img&amp;Icon\icons8-modify-32.png" />
+    <Content Include="Img&amp;Icon\icons8-nike-48.png" />
+    <Content Include="Img&amp;Icon\icons8-nike-96.png" />
+    <Content Include="Img&amp;Icon\icons8-print-32.png" />
+    <Content Include="Img&amp;Icon\icons8-refresh-16.png" />
+    <Content Include="Img&amp;Icon\icons8-revenue-32.png" />
+    <Content Include="Img&amp;Icon\icons8-save-32.png" />
+    <Content Include="Img&amp;Icon\icons8-search-16.png" />
+    <Content Include="Img&amp;Icon\icons8-shoe-32.png" />
+    <Content Include="Img&amp;Icon\icons8-shop-30.png" />
+    <Content Include="Img&amp;Icon\icons8-shop-32.png" />
+    <Content Include="Img&amp;Icon\icons8-statistics-32.png" />
+    <Content Include="Img&amp;Icon\icons8-user-32.png" />
+    <Content Include="Img&amp;Icon\icons8-view-details-32.png" />
+    <Content Include="Img&amp;Icon\image-20240530105042-4.png" />
+    <Content Include="Img&amp;Icon\img_login.jpg" />
+    <Content Include="Img&amp;Icon\nike-dunk_icon-icons.com_55308.ico" />
+    <Content Include="Img&amp;Icon\pc-computer-with-monitor_icon-icons.com_56249.ico" />
+    <Content Include="Img&amp;Icon\product_delivery_icon_152013.ico" />
+    <Content Include="Img&amp;Icon\product_delivery_icon_152013.png" />
+    <Content Include="Img&amp;Icon\tech_desktop_icon_158149.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
